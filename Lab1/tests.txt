@@ -1,0 +1,241 @@
+// CSC 365. Spring 2017
+// Lauren Klein, Andrew Gaugh
+// Lab 1-1 Test Suite
+
+// Requirements R1, R2 and R3 are tested by running the program, so don't have test cases.
+
+// TC-1
+// Tests Requirements R3, R4
+// short form command name, existing student
+// expected output:
+//   COMO,ZANDRA,4,112,CHIONCHIO,PERLA
+
+S: COMO
+
+// TC-2
+// Tests Requirements R3, R4
+// long form command name, existing student
+// expected output:
+//   COMO,ZANDRA,4,112,CHIONCHIO,PERLA
+
+Student: COMO
+
+// TC-3
+// Tests Requirements R3, R4
+// short form command name, nonexisting student
+// expected output:
+//   <empty line>
+
+S: KLEIN
+
+// TC-4
+// Tests Requirements R3, R5
+// short form command name, short form bus option
+// expected output:
+//   GARTH,JOHN,0
+
+S: GARTH B
+
+// TC-5
+// Tests Requirements R3, R5
+// short form command name, long form bus option
+// expected output:
+//   BEX,TAMESHA,55
+
+S: BEX Bus
+
+// TC-6
+// Tests Requirements R3, R6
+// short form command name
+// expected output:
+//   RACANELLO,NOEL
+//   CORONADO,DIMPLE
+//   BOYTER,WAN
+//   KEMERER,ROSETTA
+//   DEMARTINI,DEWAYNE
+
+T: KERBS
+
+// TC-7
+// Tests Requirements R3, R6
+// long form command name
+// expected output:
+//   RACANELLO,NOEL
+//   CORONADO,DIMPLE
+//   BOYTER,WAN
+//   KEMERER,ROSETTA
+//   DEMARTINI,DEWAYNE
+
+Teacher: Kerbs
+
+// TC-8
+// Tests Requirements R3, R7
+// short form command name for grade 1
+// expected output:
+//   SAELEE,DANILO
+//   GARTH,JOHN
+
+G: 1
+
+// TC-9
+// Tests Requirements R3, R7
+// long form command name for grade 1
+// expected output:
+//   SAELEE,DANILO
+//   GARTH,JOHN
+
+Grade: 1
+
+// TC-10
+// Tests Requirements R3, R7
+// short form command name for grade 0 (no students)
+// expected output:
+//   <empty line>
+
+G: 0
+
+// TC-11
+// Tests Requirements R3, R8
+// short form command name, bus 55
+// expected output:
+//   SWEDLUND,SHARRI,3,107
+//   ZAPPAVIGNA,ELLIOTT,6,106
+//   SAENPHIMMACHA,NUMBERS,6,111
+//   BOYTER,WAN,6,102
+//   KOZOLA,BUSTER,2,108
+//   DEMARTINI,DEWAYNE,6,102
+//   BEX,TAMESHA,4,105
+//   WERST,LEON,6,111
+//   LAMKIN,TAMA,6,111
+
+B: 55
+
+// TC-12
+// Tests Requirements R3, R8
+// long form command name, bus 55
+// expected output:
+//   SWEDLUND,SHARRI,3,107
+//   ZAPPAVIGNA,ELLIOTT,6,106
+//   SAENPHIMMACHA,NUMBERS,6,111
+//   BOYTER,WAN,6,102
+//   KOZOLA,BUSTER,2,108
+//   DEMARTINI,DEWAYNE,6,102
+//   BEX,TAMESHA,4,105
+//   WERST,LEON,6,111
+//   LAMKIN,TAMA,6,111
+
+Bus: 55
+
+// TC-13
+// Tests Requirements R3, R8
+// short form command name, bus 2 (no students)
+// expected output:
+//   <empty line>
+
+B: 2
+
+// TC-14
+// Tests Requirements R3, R9
+// short form command name, short form high keyword
+// expected output:
+//   GARTH,JOHN,3.14,FALKER,ADOLPH,0
+
+G: 1 H
+
+// TC-15
+// Tests Requirements R3, R9
+// short form command name, long form high keyword
+// expected output:
+//   GARTH,JOHN,3.14,FALKER,ADOLPH,0
+
+G: 1 High
+
+// TC-16
+// Tests Requirements R3, R9
+// short form command name, short form low keyword
+// expected output:
+//   SAELEE,DANILO,2.85,FALKER,ADOLPH,54
+
+G: 1 L
+
+// TC-17
+// Tests Requirements R3, R9
+// short form command name, long form low keyword
+// expected output:
+//   SAELEE,DANILO,2.85,FALKER,ADOLPH,54
+
+G: 1 Low
+
+// TC-18
+// Tests Requirements R3, R10
+// short form command name
+// expected output:
+//   1,2.995
+
+A: 1
+
+// TC-19
+// Tests Requirements R3, R10
+// long form command name
+// expected output:
+//   1,2.995
+
+Average: 1
+
+// TC-20
+// Tests Requirements R3, R11
+// short form command name
+// expected output:
+//   0: 0
+//   1: 2
+//   2: 13
+//   3: 9
+//   4: 15
+//   5: 0
+//   6: 21
+
+I
+
+// TC-21
+// Tests Requirements R3, R11
+// long form command name
+// expected output:
+//   0: 0
+//   1: 2
+//   2: 13
+//   3: 9
+//   4: 15
+//   5: 0
+//   6: 21
+
+Info
+
+// TC-22
+// Tests Requirement R12
+// short form command name
+// expected output:
+//   <program exits>
+
+Q
+
+// TC-23
+// Tests Requirement R12
+// long form command name
+// expected output:
+//   <program exits>
+
+Quit
+
+// Tests TC-24 and TC-25 are not tests of the language, so don't have commands.
+
+// TC-24
+// Tests Requirements R13, E1
+// students.txt not located in folder
+// expected output:
+//   ERROR: Failed opening input file
+
+// TC-25
+// Tests Requirement R13, E1
+// students.txt not located in folder
+// expected output:
+//   ERROR: Line <#> of student.txt does not contain 8 attributes.

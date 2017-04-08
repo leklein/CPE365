@@ -1,0 +1,10 @@
+CPE 365 - Spring 2017
+Lauren Klein, Andrew Gaugh
+
+The command to compile the code is:
+
+javac schoolsearch.java Student.java
+
+The command to run the program is:
+
+java schoolsearch
