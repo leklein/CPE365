@@ -1,6 +1,6 @@
 /**
  * CPE 365 - Spring 2017
- * Lauren Klein, Andrew Gaugh
+ * Lauren Klein, Andrew Gough
  */
 
 public class Student {
