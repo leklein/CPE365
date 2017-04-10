@@ -1,0 +1,433 @@
+// CSC 365. Spring 2017
+// Andrew Gough, Lauren Klein
+// Lab 1-2 Test Suite
+
+// TC-1
+// Tests Requirements NR1
+// short form command name, nonexisting classroom
+// expected output:
+//   <empty line>
+
+C: 0
+
+// TC-2
+// Tests Requirements NR1
+// long form command name, existing classroom
+// expected output:
+//   RACANELLO,NOEL
+//   CORONADO,DIMPLE
+//   BOYTER,WAN
+//   KEMERER,ROSETTA
+//   DEMARTINI,DEWAYNE
+
+Classroom: 102
+
+// TC-3
+// Tests Requirements NR2
+// short form command name, nonexisting classroom
+// expected output:
+//   <empty line>
+
+C: 0 T
+
+// TC-4
+// Tests Requirements NR2
+// short form command name, existing classroom
+// expected output:
+//   HANTZ,JED
+
+C: 105 T
+
+// TC-5
+// Tests Requirements NR2
+// long form command name, existing classroom
+// expected output:
+//   HANTZ,JED
+
+Classroom: 105 T
+
+// TC-6
+// Tests Requirements NR3
+// short form command name, nonexisting grade
+// expected output:
+//   <empty line>
+
+G: 7
+
+// TC-7
+// Tests Requirements NR3
+// long form command name, nonexisting grade
+// expected output:
+//   <empty line>
+
+Grade: 7
+
+// TC-8
+// Tests Requirements NR3
+// short form command name, existing grade
+// expected output:
+//   CORKER,CARTER
+//   IMMERMAN,DEVIN
+//   RAPOSE,ALONZO
+//   WORBINGTON,DEEDRA
+//   OGAS,ERVIN
+//   SPANICEK,KENDRA
+//   GUICE,CODI
+//   GLOR,HUNG
+//   GUM,NOAH
+//   MASSART,ELDON
+//   NOVICK,ROLLAND
+//   DURAND,CARLEE
+//   BEX,TAMESHA
+//   DELUNA,KRYSTAL
+//   COMO,ZANDRA
+
+G: 4
+
+// TC-9
+// Tests Requirements NR3
+// long form command name, existing grade
+// expected output:
+//   CORKER,CARTER
+//   IMMERMAN,DEVIN
+//   RAPOSE,ALONZO
+//   WORBINGTON,DEEDRA
+//   OGAS,ERVIN
+//   SPANICEK,KENDRA
+//   GUICE,CODI
+//   GLOR,HUNG
+//   GUM,NOAH
+//   MASSART,ELDON
+//   NOVICK,ROLLAND
+//   DURAND,CARLEE
+//   BEX,TAMESHA
+//   DELUNA,KRYSTAL
+//   COMO,ZANDRA
+
+Grade: 4
+
+// TC-10
+// Tests Requirements NR3
+// short form command name, existing grade with teacher option
+// expected output:
+//   COOL,REUBEN
+//   CHIONCHIO,PERLA
+//   HANTZ,JED
+
+G: 4 T
+
+// TC-11
+// Tests Requirements NR3
+// long form command names, existing grade with teacher option
+// expected output:
+//   COOL,REUBEN
+//   CHIONCHIO,PERLA
+//   HANTZ,JED
+
+Grade: 4 Teacher
+
+// TC-12
+// Tests Requirements NR4
+// short form command name for enrollment
+// expected output:
+// Classroom 101: 1
+// Classroom 102: 5
+// Classroom 103: 2
+// Classroom 104: 2
+// Classroom 105: 6
+// Classroom 106: 2
+// Classroom 107: 7
+// Classroom 108: 11
+// Classroom 109: 5
+// Classroom 110: 2
+// Classroom 111: 9
+// Classroom 112: 8
+
+E
+
+// TC-13
+// Tests Requirements NR4
+// short form command name for enrollment
+// expected output:
+// Classroom 101: 1
+// Classroom 102: 5
+// Classroom 103: 2
+// Classroom 104: 2
+// Classroom 105: 6
+// Classroom 106: 2
+// Classroom 107: 7
+// Classroom 108: 11
+// Classroom 109: 5
+// Classroom 110: 2
+// Classroom 111: 9
+// Classroom 112: 8
+
+Enrollment
+
+// TC-14
+// Tests Requirements NR5
+// short form command name for data
+// expected output:
+3.07,3,FAFARD,ROCIO,52
+3.15,6,GAMBREL,JAE,0
+2.86,3,FAFARD,ROCIO,52
+3.13,6,KERBS,BENITO,56
+2.92,2,STEIB,GALE,51
+3.02,6,NISTENDIRK,NANCY,51
+2.81,6,NISTENDIRK,NANCY,0
+2.88,2,STEIB,GALE,56
+3.11,3,ALPERT,JONATHAN,0
+3.12,4,HANTZ,JED,53
+2.78,4,HANTZ,JED,52
+2.96,2,HAMER,GAVIN,51
+3.24,3,FAFARD,ROCIO,55
+3.15,6,BODZIONY,LUZ,55
+2.95,6,NISTENDIRK,NANCY,52
+3.12,4,HANTZ,JED,51
+2.88,6,KERBS,BENITO,52
+2.99,4,CHIONCHIO,PERLA,53
+2.79,3,FAFARD,ROCIO,53
+2.88,2,HAMER,GAVIN,0
+2.84,4,HANTZ,JED,54
+3.1,4,CHIONCHIO,PERLA,53
+2.88,6,NISTENDIRK,NANCY,55
+2.98,4,CHIONCHIO,PERLA,54
+3.1,6,KERBS,BENITO,55
+2.82,6,NISTENDIRK,NANCY,54
+2.79,2,HAMER,GAVIN,52
+3.14,6,GAMBREL,JAE,53
+3.11,3,FAFARD,ROCIO,51
+2.91,3,FAFARD,ROCIO,52
+2.89,2,HAMER,GAVIN,54
+3.22,2,HAMER,GAVIN,53
+2.78,6,GAMBREL,JAE,56
+2.87,4,CHIONCHIO,PERLA,54
+2.76,2,HAMER,GAVIN,55
+2.84,6,KERBS,BENITO,52
+2.84,6,NISTENDIRK,NANCY,56
+3.09,2,HAMER,GAVIN,51
+2.85,1,FALKER,ADOLPH,54
+2.95,4,CHIONCHIO,PERLA,54
+3.01,2,HAMER,GAVIN,56
+2.93,2,HAMER,GAVIN,54
+3.05,2,HAMER,GAVIN,54
+3.12,3,FAFARD,ROCIO,53
+2.8,4,HANTZ,JED,0
+2.93,6,KERBS,BENITO,55
+3.14,1,FALKER,ADOLPH,0
+2.97,4,CHIONCHIO,PERLA,54
+2.88,6,GAMBREL,JAE,0
+3.23,3,ALPERT,JONATHAN,54
+2.89,6,NISTENDIRK,NANCY,56
+2.91,4,COOL,REUBEN,51
+2.82,4,HANTZ,JED,55
+3.02,4,CHIONCHIO,PERLA,53
+2.92,2,HAMER,GAVIN,54
+3.22,6,NISTENDIRK,NANCY,55
+3.23,6,NISTENDIRK,NANCY,55
+2.85,6,GAMBREL,JAE,0
+3.03,6,BODZIONY,LUZ,51
+3,4,CHIONCHIO,PERLA,53
+
+D
+
+// TC-15
+// Tests Requirements NR5
+// short form command name data, grade
+// expected output:
+3.07,3
+3.15,6
+2.86,3
+3.13,6
+2.92,2
+3.02,6
+2.81,6
+2.88,2
+3.11,3
+3.12,4
+2.78,4
+2.96,2
+3.24,3
+3.15,6
+2.95,6
+3.12,4
+2.88,6
+2.99,4
+2.79,3
+2.88,2
+2.84,4
+3.1,4
+2.88,6
+2.98,4
+3.1,6
+2.82,6
+2.79,2
+3.14,6
+3.11,3
+2.91,3
+2.89,2
+3.22,2
+2.78,6
+2.87,4
+2.76,2
+2.84,6
+2.84,6
+3.09,2
+2.85,1
+2.95,4
+3.01,2
+2.93,2
+3.05,2
+3.12,3
+2.8,4
+2.93,6
+3.14,1
+2.97,4
+2.88,6
+3.23,3
+2.89,6
+2.91,4
+2.82,4
+3.02,4
+2.92,2
+3.22,6
+3.23,6
+2.85,6
+3.03,6
+3,4
+
+D G
+
+// TC-16
+// Tests Requirements NR5
+// short form command name data, grade, teacher
+// expected output:
+3.07,3,FAFARD,ROCIO
+3.15,6,GAMBREL,JAE
+2.86,3,FAFARD,ROCIO
+3.13,6,KERBS,BENITO
+2.92,2,STEIB,GALE
+3.02,6,NISTENDIRK,NANCY
+2.81,6,NISTENDIRK,NANCY
+2.88,2,STEIB,GALE
+3.11,3,ALPERT,JONATHAN
+3.12,4,HANTZ,JED
+2.78,4,HANTZ,JED
+2.96,2,HAMER,GAVIN
+3.24,3,FAFARD,ROCIO
+3.15,6,BODZIONY,LUZ
+2.95,6,NISTENDIRK,NANCY
+3.12,4,HANTZ,JED
+2.88,6,KERBS,BENITO
+2.99,4,CHIONCHIO,PERLA
+2.79,3,FAFARD,ROCIO
+2.88,2,HAMER,GAVIN
+2.84,4,HANTZ,JED
+3.1,4,CHIONCHIO,PERLA
+2.88,6,NISTENDIRK,NANCY
+2.98,4,CHIONCHIO,PERLA
+3.1,6,KERBS,BENITO
+2.82,6,NISTENDIRK,NANCY
+2.79,2,HAMER,GAVIN
+3.14,6,GAMBREL,JAE
+3.11,3,FAFARD,ROCIO
+2.91,3,FAFARD,ROCIO
+2.89,2,HAMER,GAVIN
+3.22,2,HAMER,GAVIN
+2.78,6,GAMBREL,JAE
+2.87,4,CHIONCHIO,PERLA
+2.76,2,HAMER,GAVIN
+2.84,6,KERBS,BENITO
+2.84,6,NISTENDIRK,NANCY
+3.09,2,HAMER,GAVIN
+2.85,1,FALKER,ADOLPH
+2.95,4,CHIONCHIO,PERLA
+3.01,2,HAMER,GAVIN
+2.93,2,HAMER,GAVIN
+3.05,2,HAMER,GAVIN
+3.12,3,FAFARD,ROCIO
+2.8,4,HANTZ,JED
+2.93,6,KERBS,BENITO
+3.14,1,FALKER,ADOLPH
+2.97,4,CHIONCHIO,PERLA
+2.88,6,GAMBREL,JAE
+3.23,3,ALPERT,JONATHAN
+2.89,6,NISTENDIRK,NANCY
+2.91,4,COOL,REUBEN
+2.82,4,HANTZ,JED
+3.02,4,CHIONCHIO,PERLA
+2.92,2,HAMER,GAVIN
+3.22,6,NISTENDIRK,NANCY
+3.23,6,NISTENDIRK,NANCY
+2.85,6,GAMBREL,JAE
+3.03,6,BODZIONY,LUZ
+3,4,CHIONCHIO,PERLA
+
+D G T
+
+// TC-17
+// Tests Requirements NR5
+// short form command name data, grade, teacher, bus
+// expected output:
+3.07,3,FAFARD,ROCIO,52
+3.15,6,GAMBREL,JAE,0
+2.86,3,FAFARD,ROCIO,52
+3.13,6,KERBS,BENITO,56
+2.92,2,STEIB,GALE,51
+3.02,6,NISTENDIRK,NANCY,51
+2.81,6,NISTENDIRK,NANCY,0
+2.88,2,STEIB,GALE,56
+3.11,3,ALPERT,JONATHAN,0
+3.12,4,HANTZ,JED,53
+2.78,4,HANTZ,JED,52
+2.96,2,HAMER,GAVIN,51
+3.24,3,FAFARD,ROCIO,55
+3.15,6,BODZIONY,LUZ,55
+2.95,6,NISTENDIRK,NANCY,52
+3.12,4,HANTZ,JED,51
+2.88,6,KERBS,BENITO,52
+2.99,4,CHIONCHIO,PERLA,53
+2.79,3,FAFARD,ROCIO,53
+2.88,2,HAMER,GAVIN,0
+2.84,4,HANTZ,JED,54
+3.1,4,CHIONCHIO,PERLA,53
+2.88,6,NISTENDIRK,NANCY,55
+2.98,4,CHIONCHIO,PERLA,54
+3.1,6,KERBS,BENITO,55
+2.82,6,NISTENDIRK,NANCY,54
+2.79,2,HAMER,GAVIN,52
+3.14,6,GAMBREL,JAE,53
+3.11,3,FAFARD,ROCIO,51
+2.91,3,FAFARD,ROCIO,52
+2.89,2,HAMER,GAVIN,54
+3.22,2,HAMER,GAVIN,53
+2.78,6,GAMBREL,JAE,56
+2.87,4,CHIONCHIO,PERLA,54
+2.76,2,HAMER,GAVIN,55
+2.84,6,KERBS,BENITO,52
+2.84,6,NISTENDIRK,NANCY,56
+3.09,2,HAMER,GAVIN,51
+2.85,1,FALKER,ADOLPH,54
+2.95,4,CHIONCHIO,PERLA,54
+3.01,2,HAMER,GAVIN,56
+2.93,2,HAMER,GAVIN,54
+3.05,2,HAMER,GAVIN,54
+3.12,3,FAFARD,ROCIO,53
+2.8,4,HANTZ,JED,0
+2.93,6,KERBS,BENITO,55
+3.14,1,FALKER,ADOLPH,0
+2.97,4,CHIONCHIO,PERLA,54
+2.88,6,GAMBREL,JAE,0
+3.23,3,ALPERT,JONATHAN,54
+2.89,6,NISTENDIRK,NANCY,56
+2.91,4,COOL,REUBEN,51
+2.82,4,HANTZ,JED,55
+3.02,4,CHIONCHIO,PERLA,53
+2.92,2,HAMER,GAVIN,54
+3.22,6,NISTENDIRK,NANCY,55
+3.23,6,NISTENDIRK,NANCY,55
+2.85,6,GAMBREL,JAE,0
+3.03,6,BODZIONY,LUZ,51
+3,4,CHIONCHIO,PERLA,53
+
+D G T B
