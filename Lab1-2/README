@@ -1,0 +1,24 @@
+CPE 365 - Spring 2017
+Lauren Klein, Andrew Gough
+
+The command to compile the code is:
+
+javac schoolsearch.java Student.java
+
+The command to run the program is:
+
+java schoolsearch
+
+Our new commands for NR1-NR5 are as follows:
+
+NR1 - C[lassroom]: <number>
+NR2 - C[lassroom]: <number> [T[eacher]]
+NR3 - G[rade]: <number> [T[eacher]
+NR4 - E[nrollment]
+NR5 - D[ata] [[G]rade] [T[eacher]] [B[us]]
+
+We chose to not include the students' names in NR5 because they would/should not play a part
+in any general trends.  Essentially, they would just need the Y variable and the X variables.
+
+Instead, every student's GPA would be printed, followed by optionally the grade level, teacher,
+and bus route, depending on which flags the user included (in that order).
